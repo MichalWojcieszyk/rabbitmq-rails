@@ -1,0 +1,14 @@
+%p#notice= notice
+%h1 Listing Posts
+%table
+  %thead
+    %tr
+      %th Title
+      %th Body
+  %tbody
+    - @posts.each do |post|
+      %tr
+        %td= post.title
+        %td= post.body
+%br/
+= link_to 'New Post', new_post_path

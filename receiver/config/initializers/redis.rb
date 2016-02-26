@@ -1,0 +1,1 @@
+$redis = Redis::Namespace.new("receiver:#{Rails.env}", redis: Redis.new)

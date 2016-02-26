@@ -1,0 +1,12 @@
+%h2 Recently received messages
+%table
+  %thead
+    %tr
+      %th Title
+      %th Body
+  %tbody
+    - @posts.each do |post|
+      %tr
+        %td= post[:title]
+        %th
+        %td= post[:body]
