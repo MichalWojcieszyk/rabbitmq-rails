@@ -13,7 +13,7 @@
 - Setup database: `rake db:migrate`
 - `rails server -p 3000`
 
-### Receiver and Worker
+### Worker
 - `cd receiver`
 - `rake sneakers:run`
 
